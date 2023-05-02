@@ -1,7 +1,7 @@
 #include <fstream>
 #include "../../include/repositories/bus-repository.hpp"
+#include "../../include/core/files.hpp"
 #include "../domain/bus.cpp"
-#include "../core/files.cpp"
 
 using namespace std;
 
