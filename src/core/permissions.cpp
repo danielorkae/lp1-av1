@@ -1,4 +1,4 @@
-#include "permissions.hpp"
+#include "../../include/core/permissions.hpp"
 
 map<string, vector<string>> policies;
 

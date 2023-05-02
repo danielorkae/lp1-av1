@@ -1,5 +1,5 @@
 #include <fstream>
-#include "headers/files.hpp"
+#include "../../include/core/files.hpp"
 
 /// @brief Lê um arquivo e retorna suas linhas em um vetor de strings.
 /// @details Facilita a leitura, e permite reutilização em divesos pontos do código.
