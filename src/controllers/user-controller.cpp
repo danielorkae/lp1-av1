@@ -1,5 +1,8 @@
 #include <iostream>
-#include "../core/permissions.cpp"
+#include "include/core/io.hpp"
+#include "include/core/permissions.hpp"
+// #include "include/repositories/bus-repository.hpp"
+#include "include/presentation/bus-presentation.hpp"
 
 using namespace std;
 
@@ -38,12 +41,39 @@ void user_menu()
 
 void list_buses()
 {
-    cout << "Listando ônibus" << endl;
+    vector<Bus> buses = get_buses();
+
+    title("Lista de ônibus");
+    print_buses(buses);
 }
 
 void search_bus_by_terminal()
 {
-    cout << "Buscando ônibus por terminal" << endl;
+    vector<Bus> buses = get_buses();
+
+    title("Buscar ônibus por terminal");
+
+    string terminal;
+    cout << "Digite o terminal: ";
+    cin >> terminal;
+
+    vector<Bus> buses_found;
+
+    for (int i = 0; i < buses.size(); i++)
+    {
+        if (buses[i].terminal == terminal)
+        {
+            buses_found.push_back(buses[i]);
+        }
+    }
+
+    if (buses_found.size() == 0)
+    {
+        cout << "Nenhum ônibus encontrado" << endl;
+        return;
+    }
+
+    print_buses(buses_found);
 }
 
 void show_bus_itinerary()
