@@ -4,6 +4,6 @@ using namespace std;
 
 struct Bus
 {
-    string code;
+    string name;
     string terminal;
 };

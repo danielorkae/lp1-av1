@@ -1,5 +1,5 @@
-#include <vector>
 #include <fstream>
+#include "../../include/repositories/bus-repository.hpp"
 #include "../domain/bus.cpp"
 #include "../core/files.cpp"
 
@@ -20,7 +20,7 @@ vector<Bus> get_buses()
     {
         // A ordem, nesse caso, é importante, pois é a mesma ordem que será salva.
         Bus bus;
-        bus.code = lines[i];
+        bus.name = lines[i];
         bus.terminal = lines[++i];
 
         buses.push_back(bus);
@@ -39,7 +39,7 @@ void save_buses(vector<Bus> buses)
     for (int i = 0; i < buses.size(); i++)
     {
         // A ordem, nesse caso, é importante, pois é a mesma ordem que será lida.
-        lines.push_back(buses[i].code);
+        lines.push_back(buses[i].name);
         lines.push_back(buses[i].terminal);
     }
 
