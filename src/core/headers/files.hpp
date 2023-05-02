@@ -1,5 +1,5 @@
-#ifndef FILES_UTILS_HPP
-#define FILES_UTILS_HPP
+#ifndef CORE_FILES_HPP
+#define CORE_FILES_HPP
 
 #include <vector>
 #include <string>
