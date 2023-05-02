@@ -5,13 +5,15 @@
 
 using namespace std;
 
+const string FILE_PATH = "data/buses.txt";
+
 /// @brief Retorna todos os ônibus cadastrados.
 /// @return
 vector<Bus> get_buses()
 {
     vector<Bus> buses;
 
-    vector<string> lines = read_file_lines("data/buses.txt");
+    vector<string> lines = read_file_lines(FILE_PATH);
 
     // Transforma as linhas em dados dos ônibus.
     for (int i = 0; i < lines.size(); i++)
@@ -41,5 +43,5 @@ void save_buses(vector<Bus> buses)
         lines.push_back(buses[i].terminal);
     }
 
-    save_file_lines("data/buses.txt", lines);
+    save_file_lines(FILE_PATH, lines);
 }
