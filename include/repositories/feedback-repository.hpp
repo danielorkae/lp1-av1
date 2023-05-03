@@ -2,11 +2,11 @@
 #define REPOSITORIES_BUS_REPOSITORY_HPP
 
 #include <vector>
-#include "../domain/bus.hpp"
+#include "../domain/feedback.hpp"
 
 using namespace std;
 
-vector<Bus> get_buses();
-void save_buses(vector<Bus> buses);
+vector<Feedback> get_feedbacks();
+void save_feedbacks(vector<Feedback> feedbacks);
 
 #endif

@@ -2,7 +2,7 @@
 #define PRESENTATION_BUS_PRESENTATION_HPP
 
 #include <vector>
-#include "../../src/domain/bus.cpp"
+#include "..//domain/bus.hpp"
 
 using namespace std;
 

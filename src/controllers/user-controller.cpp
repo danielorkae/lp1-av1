@@ -1,7 +1,7 @@
 #include <iostream>
 #include "include/core/io.hpp"
 #include "include/core/permissions.hpp"
-// #include "include/repositories/bus-repository.hpp"
+#include "include/repositories/bus-repository.hpp"
 #include "include/presentation/bus-presentation.hpp"
 
 using namespace std;

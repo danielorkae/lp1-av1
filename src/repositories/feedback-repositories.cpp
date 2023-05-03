@@ -1,6 +1,6 @@
 #include <vector>
 #include <fstream>
-#include "../domain/feedback.cpp"
+#include "../../include/repositories/feedback-repository.hpp"
 #include "../core/files.cpp"
 
 using namespace std;
