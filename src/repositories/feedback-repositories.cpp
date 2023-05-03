@@ -1,7 +1,7 @@
 #include <vector>
 #include <fstream>
-#include "../../include/repositories/feedback-repository.hpp"
-#include "../core/files.cpp"
+#include "include/repositories/feedback-repository.hpp"
+#include "include/core/files.hpp"
 
 using namespace std;
 
