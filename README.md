@@ -1,7 +1,7 @@
 # LP1 - AV1 - Sistema Gerenciador de Linhas de Ônibus
 
 ## Detalhes
-Autor: Daniel Ferreira Lopes (github: [danielorkae](https://github.com/danielorkae))
+Autor: Daniel Lopes (github: [danielorkae](https://github.com/danielorkae))
 
 Link do repositório: [GitHub](https://github.com/danielorkae/lp1-atv1)
 
