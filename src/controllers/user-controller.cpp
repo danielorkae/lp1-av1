@@ -20,6 +20,7 @@ void user_menu()
     };
 
     int option = prompt_menu(options, true, true);
+    clear_screen();
 
     switch (option)
     {
@@ -36,9 +37,10 @@ void user_menu()
         leave_feedback();
         break;
     case 5:
-        return;
+        exit(0);
         break;
     }
+    pause();
 }
 
 void list_buses()

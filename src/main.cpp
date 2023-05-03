@@ -6,7 +6,10 @@ using namespace std;
 
 int main()
 {
-    user_menu();
+    while (true)
+    {
+        user_menu();
+    }
 
     return 0;
 }
