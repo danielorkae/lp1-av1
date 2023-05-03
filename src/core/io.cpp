@@ -1,5 +1,6 @@
 #include <iostream>
 #include "core/io.hpp"
+#include <limits>
 
 /// @brief Limpa a tela
 void clear_screen()
@@ -40,9 +41,7 @@ int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option
              << options.size() + 1 << ". Sair" << endl;
     }
 
-    cout << endl
-         << "Escolha uma opção: ";
-    cin >> option;
+    option = stoi(prompt("Escolha uma opção: "));
 
     if (option < 1 || option > options.size() + 1)
     {
@@ -62,6 +61,7 @@ string prompt(string message)
 
     cout << message;
     cin >> text;
+    cin.ignore();
 
     return text;
 }
@@ -73,7 +73,6 @@ string prompt_line(string message)
 {
     string text;
 
-    cin.ignore();
     cout << message;
     getline(cin, text);
 
@@ -110,5 +109,4 @@ void pause()
     cout << endl
          << "Pressione ENTER para continuar...";
     cin.ignore();
-    cin.get();
 }
