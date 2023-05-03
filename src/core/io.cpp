@@ -22,7 +22,7 @@ void title(string title)
 /// @return
 int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option)
 {
-    int option;
+    unsigned int option;
 
     if (clear_screen)
     {
@@ -31,7 +31,7 @@ int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option
 
     title("Menu");
 
-    for (int i = 0; i < options.size(); i++)
+    for (unsigned int i = 0; i < options.size(); i++)
     {
         cout << i + 1 << ". " << options[i] << endl;
     }

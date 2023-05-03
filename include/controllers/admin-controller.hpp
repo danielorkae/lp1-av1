@@ -1,0 +1,6 @@
+#ifndef CONTROLLERS_ADMIN_CONTROLLER_HPP
+#define CONTROLLERS_ADMIN_CONTROLLER_HPP
+
+void admin_menu();
+
+#endif
