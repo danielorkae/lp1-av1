@@ -9,8 +9,6 @@ void auth_menu(string &user_role)
 {
     title("Menu de Autenticação");
 
-    alert("Você é?", false, false);
-
     vector<string> options = {
         "Passageiro",
         "Administrador",
