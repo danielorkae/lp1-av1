@@ -1,6 +1,12 @@
 #include <iostream>
 #include "../../include/core/io.hpp"
 
+/// @brief Limpa a tela
+void clear_screen()
+{
+    system("clear || cls");
+}
+
 /// @brief Mostra um título na tela
 /// @param title
 void title(string title)
