@@ -1,7 +1,7 @@
 #include <fstream>
-#include "repositories/bus-repository.hpp"
 #include "core/files.hpp"
-#include "bus-repository.hpp"
+#include "repositories/bus-repository.hpp"
+#include "repositories/bus-repository.hpp"
 
 using namespace std;
 
@@ -92,7 +92,7 @@ void save_bus(Bus bus, vector<Bus> buses)
 /// @brief Exclui um ônibus.
 /// @param bus 
 /// @param buses 
-void delete_bus(Bus bus, vector<Bus> buses)
+void drop_bus(Bus bus, vector<Bus> buses)
 {
     for (unsigned int i = 0; i < buses.size(); i++)
     {

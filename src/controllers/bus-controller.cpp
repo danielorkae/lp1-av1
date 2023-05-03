@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
 #include "controllers/bus-controller.hpp"
+#include "controllers/bus-controller.hpp"
 #include "core/io.hpp"
 #include "domain/bus.hpp"
 #include "printers/bus-printer.hpp"
 #include "repositories/bus-repository.hpp"
-#include "bus-controller.hpp"
 
 using namespace std;
 
@@ -158,5 +158,5 @@ void delete_bus()
         return;
     }
 
-    delete_bus(bus, buses);
+    drop_bus(bus, buses);
 }
