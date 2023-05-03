@@ -10,5 +10,7 @@ void title(string title);
 int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option = true);
 string prompt(string message);
 string prompt_line(string message);
+void alert(string message, bool warn = false, bool clear_screen = false);
+void pause();
 
 #endif

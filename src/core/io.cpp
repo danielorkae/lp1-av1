@@ -74,3 +74,36 @@ string prompt_line(string message)
 
     return text;
 }
+
+/// @brief Mostra uma mensagem
+/// @param message
+void alert(string message, bool warn = false, bool clear_screen = false)
+{
+    if (clear_screen)
+    {
+        system("clear || cls");
+    }
+
+    if (warn)
+    {
+        cout << "!!! ";
+    }
+
+    cout << message;
+
+    if (warn)
+    {
+        cout << " !!!";
+    }
+
+    cout << endl;
+}
+
+/// @brief Pausa a execução do programa
+void pause()
+{
+    cout << endl
+         << "Pressione ENTER para continuar...";
+    cin.ignore();
+    cin.get();
+}
