@@ -75,6 +75,7 @@ string prompt_line(string message)
 {
     string text;
 
+    cin.ignore();
     cout << message;
     getline(cin, text);
 

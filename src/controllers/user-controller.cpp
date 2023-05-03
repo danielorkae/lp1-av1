@@ -57,9 +57,7 @@ void search_bus_by_terminal()
 
     title("Buscar ônibus por terminal");
 
-    string terminal;
-    cout << "Digite o terminal: ";
-    cin >> terminal;
+    string terminal = prompt_line("Digite o nome do terminal: ");
 
     vector<Bus> buses_found;
 
@@ -73,7 +71,7 @@ void search_bus_by_terminal()
 
     if (buses_found.size() == 0)
     {
-        cout << "Nenhum ônibus encontrado" << endl;
+        alert("Nenhum ônibus encontrado", true, false);
         return;
     }
 
@@ -82,7 +80,30 @@ void search_bus_by_terminal()
 
 void show_bus_itinerary()
 {
-    cout << "Mostrando intinerário de ônibus" << endl;
+    vector<Bus> buses = get_buses();
+
+    title("Ver intinerário de ônibus");
+
+    string bus_name = prompt_line("Digite o nome do ônibus: ");
+
+    Bus bus;
+
+    for (unsigned int i = 0; i < buses.size(); i++)
+    {
+        if (buses[i].name == bus_name)
+        {
+            bus = buses[i];
+            break;
+        }
+    }
+
+    if (bus.name == "")
+    {
+        alert("Nenhum ônibus encontrado", true, false);
+        return;
+    }
+
+    print_bus(bus);
 }
 
 void leave_feedback()
