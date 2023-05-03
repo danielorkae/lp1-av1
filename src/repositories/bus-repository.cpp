@@ -21,6 +21,7 @@ vector<Bus> get_buses()
         Bus bus;
         bus.name = lines[i];
         bus.terminal = lines[++i];
+        bus.intinerary = lines[++i];
 
         buses.push_back(bus);
     }
@@ -40,6 +41,7 @@ void save_buses(vector<Bus> buses)
         // A ordem, nesse caso, é importante, pois é a mesma ordem que será lida.
         lines.push_back(buses[i].name);
         lines.push_back(buses[i].terminal);
+        lines.push_back(buses[i].intinerary);
     }
 
     save_file_lines(FILE_PATH, lines);

@@ -1,4 +1,30 @@
-1029
-Nova Descoberta
-30
-Pirangi
+S-50
+Serrambi 
+Serrambi / Santa Catarina
+L-52
+Rocas 
+Rocas / Pirangi via Alecrim
+L-51
+Rocas 
+Rocas / Pirangi via Praça Cívica
+O-39
+Cidade Nova 
+Cidade Nova / Ribeira via Tirol
+O-24
+Planalto 
+Planalto / Ribeira via Prudente de Morais
+L-56
+Rocas 
+Rocas / Ponta Negra via Costeira
+L-54
+Rocas 
+Rocas / Ponta Negra via Alecrim
+L-46
+Rocas 
+Rocas / Ponta Negra via Praça Cívica
+L-37
+Rocas 
+Rocas / Cidade Satélite via Praça Cívica
+N-73
+Santarém 
+Santarém / Ponta Negra
