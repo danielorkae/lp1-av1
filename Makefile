@@ -10,10 +10,10 @@ OBJ = $(SRC:.cpp=.o)
 all: program
 
 program: $(OBJ)
-    $(CC) $(CFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $^ -o $@
 
 %.o: %.cpp
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-    rm -f $(OBJ) program
+	rm -f $(OBJ) program
