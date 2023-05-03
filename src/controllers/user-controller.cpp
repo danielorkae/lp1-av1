@@ -1,8 +1,11 @@
 #include <iostream>
-#include "include/core/io.hpp"
-#include "include/core/permissions.hpp"
-#include "include/presentation/bus-presentation.hpp"
-#include "include/repositories/bus-repository.hpp"
+#include "../../include/controllers/user-controller.hpp"
+#include "../../include/core/io.hpp"
+#include "../../include/core/permissions.hpp"
+#include "../../include/domain/feedback.hpp"
+#include "../../include/presentation/bus-presentation.hpp"
+#include "../../include/repositories/bus-repository.hpp"
+#include "../../include/repositories/feedback-repository.hpp"
 #include "../../include/repositories/feedback-repository.hpp"
 
 using namespace std;
@@ -59,7 +62,7 @@ void search_bus_by_terminal()
 
     vector<Bus> buses_found;
 
-    for (int i = 0; i < buses.size(); i++)
+    for (unsigned int i = 0; i < buses.size(); i++)
     {
         if (buses[i].terminal == terminal)
         {

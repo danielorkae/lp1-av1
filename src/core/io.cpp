@@ -14,7 +14,7 @@ void title(string title)
 /// @param clear_screen Limpa a tela antes de mostrar o menu
 /// @param show_exit_option Mostra a opção de sair no menu
 /// @return
-int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option = true)
+int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option)
 {
     int option;
 
@@ -77,7 +77,7 @@ string prompt_line(string message)
 
 /// @brief Mostra uma mensagem
 /// @param message
-void alert(string message, bool warn = false, bool clear_screen = false)
+void alert(string message, bool warn, bool clear_screen)
 {
     if (clear_screen)
     {

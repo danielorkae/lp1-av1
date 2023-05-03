@@ -1,7 +1,7 @@
 #include <vector>
 #include <fstream>
-#include "include/repositories/feedback-repository.hpp"
-#include "include/core/files.hpp"
+#include "../../include/repositories/feedback-repository.hpp"
+#include "../../include/core/files.hpp"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ vector<Feedback> get_feedbacks()
     vector<string> lines = read_file_lines(FILE_PATH);
 
     // Transforma as linhas em dados das reclamações.
-    for (int i = 0; i < lines.size(); i++)
+    for (unsigned int i = 0; i < lines.size(); i++)
     {
         // A ordem, nesse caso, é importante, pois é a mesma ordem que será salva.
         Feedback feedback;
@@ -36,7 +36,7 @@ void save_feedbacks(vector<Feedback> feedbacks)
     vector<string> lines;
 
     // Transforma os dados das reclamações em linhas.
-    for (int i = 0; i < feedbacks.size(); i++)
+    for (unsigned int i = 0; i < feedbacks.size(); i++)
     {
         // A ordem, nesse caso, é importante, pois é a mesma ordem que será lida.
         lines.push_back(feedbacks[i].content);

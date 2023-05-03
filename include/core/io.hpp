@@ -7,10 +7,10 @@
 using namespace std;
 
 void title(string title);
-int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option = true);
+int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option);
 string prompt(string message);
 string prompt_line(string message);
-void alert(string message, bool warn = false, bool clear_screen = false);
+void alert(string message, bool warn, bool clear_screen);
 void pause();
 
 #endif
