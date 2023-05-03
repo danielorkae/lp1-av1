@@ -1,11 +1,8 @@
 #include <iostream>
+#include "controllers/bus-controller.hpp"
+#include "controllers/feedback-controller.hpp"
 #include "controllers/user-controller.hpp"
 #include "core/io.hpp"
-#include "core/permissions.hpp"
-#include "domain/feedback.hpp"
-#include "repositories/feedback-repository.hpp"
-#include "repositories/feedback-repository.hpp"
-#include "controllers/bus-controller.hpp"
 
 using namespace std;
 
@@ -42,23 +39,4 @@ void user_menu()
         break;
     }
     pause();
-}
-
-void leave_feedback()
-{
-    vector<Feedback> feedbacks = get_feedbacks();
-    string content, date;
-
-    title("Deixar um feedback");
-
-    content = prompt_line("Digite o conteúdo do feedback: ");
-    date = prompt_line("Digite a data do feedback: ");
-
-    Feedback feedback;
-    feedback.content = content;
-    feedback.date = date;
-
-    feedbacks.push_back(feedback);
-
-    save_feedbacks(feedbacks);
 }
