@@ -6,6 +6,8 @@
 
 using namespace std;
 
+/// @brief Mostra o menu do usuário
+/// @details Pede ao usuário que escolha uma opção e chama a função correspondente
 void user_menu()
 {
     vector<string> options = {
