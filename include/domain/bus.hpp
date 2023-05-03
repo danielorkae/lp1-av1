@@ -9,6 +9,7 @@ struct Bus
 {
     string name;
     string terminal;
+    string intinerary;
 };
 
 #endif
