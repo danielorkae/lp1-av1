@@ -13,11 +13,10 @@ using namespace std;
 void user_menu()
 {
     vector<string> options = {
-        "1. Listar ônibus",
-        "2. Buscar ônibus por terminal",
-        "3. Ver intinerário de ônibus",
-        "4. Deixar um feedback",
-        "5. Voltar",
+        "Listar ônibus",
+        "Buscar ônibus por terminal",
+        "Ver intinerário de ônibus",
+        "Deixar um feedback",
     };
 
     int option = prompt_menu(options, true, true);
