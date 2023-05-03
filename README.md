@@ -1,5 +1,9 @@
 # Sistema Gerenciador de Linhas de Ônibus
 
+## Detalhes
+Autor: Daniel Ferreira Lopes (github: [danielorkae](https://github.com/danielorkae))
+
+Link do repositório: [GitHub](https://github.com/danielorkae/lp1-atv1)
 
 ## Descrição
 
@@ -30,24 +34,29 @@ A arquitetura do projeto foi inspirada no padrão MVC (Model-View-Controller), o
 ### Controllers
 
 Os controllers são responsáveis por fazer a interação com o usuário, recebendo a entrada de dados e retornando a informação processada. 
+
 No projeto, os controllers estão centralizados nas pastas `src/controllers` e os cabeçalhos na pasta `include/controllers`.
 
 ### Core
 
 O core é responsável por incorporar a lógica de aplicação do sistema, ou seja, encapsula as funções globais compartilhadas por todo sistema.
+
 No projeto, o core está centralizado nas pastas `src/core` e os cabeçalhos na pasta `include/core`.
 
 ### Domain
 
 Por ser um projeto pequeno, não foi necessário a criação de modelos como no padrão MVC, visto que as entidades do sistema são anêmicas, ou seja, sem comportamento. Dessa forma, as entidades foram representadas por `structs`, que são utilizadas para estruturar e armazenar os dados das entidades em tempo de execução.
+
 No projeto, as entidades estão centralizadas apenas nos cabeçalhos, na pasta `include/domain`.
 
 ### Printers
 
 Por se trata de um projeto que executa no terminal, não foi necessário a criação de Views, como no padrão MVC, visto que a interação com o usuário é feita através do próprio console. Dessa forma, criei arquivos que chamei de `printers`, que são responsáveis por definir modelos de visualização da informação, facilitando o reuso de código, padronização da visualização e facilitando a manutenção do código.
+
 No projeto, os printers estão centralizados nas pastas `src/printers` e os cabeçalhos na pasta `include/printers`.
 
 ### Repositories
 
 Os repositories são responsáveis por fazer a interação com a camada de persistência de dados, ou seja, são responsáveis por ler e escrever os dados em arquivos.
+
 No projeto, os repositories estão centralizados nas pastas `src/repositories` e os cabeçalhos na pasta `include/repositories`.
