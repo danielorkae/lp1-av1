@@ -5,7 +5,7 @@ void print_bus(Bus bus)
 {
     cout << "Nome: " << bus.name << endl
          << "Terminal: " << bus.terminal << endl
-         << "Itinerário: " << bus.intinerary
+         << "Itinerário: " << bus.itinerary
          << endl;
 }
 
