@@ -1,19 +1,33 @@
-# Vars
+# Makefile para compilar o projeto
+
+# Compilador e flags
 CC = g++
-CFLAGS = -Wall -Wextra -std=c++17 -I./include
+CFLAGS = -Wall -std=c++11
 
-# Files
-SRC = $(wildcard src/*.cpp)
-OBJ = $(SRC:.cpp=.o)
+# Nome do programa e diretórios
+PROGRAM = program
+SRC_DIR = src
+BUILD_DIR = build
+BIN_DIR = bin
 
-# Rules
-all: program
+# Obtém a lista de arquivos fonte e objetos
+SRCS = $(wildcard $(SRC_DIR)/*.cpp)
+OBJS = $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(SRCS))
+EXEC = $(BIN_DIR)/$(PROGRAM)
 
-program: $(OBJ)
+# Regra padrão, que chama a regra para gerar o executável
+all: $(EXEC)
+
+# Regra para gerar o executável
+$(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
 
-%.o: %.cpp
+# Regra para gerar os objetos
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
+	mkdir -p $(@D)
 	$(CC) $(CFLAGS) -c $< -o $@
 
+# Define a regra para limpar os arquivos gerados pelo Makefile
+.PHONY: clean
 clean:
-	rm -f $(OBJ) program
+	rm -rf $(BUILD_DIR)/** $(BIN_DIR)/**
