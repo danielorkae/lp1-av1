@@ -1,12 +1,12 @@
 #include <iostream>
-#include "../../include/controllers/user-controller.hpp"
-#include "../../include/core/io.hpp"
-#include "../../include/core/permissions.hpp"
-#include "../../include/domain/feedback.hpp"
-#include "../../include/presentation/bus-presentation.hpp"
-#include "../../include/repositories/bus-repository.hpp"
-#include "../../include/repositories/feedback-repository.hpp"
-#include "../../include/repositories/feedback-repository.hpp"
+#include "controllers/user-controller.hpp"
+#include "core/io.hpp"
+#include "core/permissions.hpp"
+#include "domain/feedback.hpp"
+#include "presentation/bus-presentation.hpp"
+#include "repositories/bus-repository.hpp"
+#include "repositories/feedback-repository.hpp"
+#include "repositories/feedback-repository.hpp"
 
 using namespace std;
 

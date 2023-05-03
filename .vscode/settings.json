@@ -1,4 +1,8 @@
 {
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/**",
+    ],
     "files.associations": {
         "vector": "cpp",
         "ostream": "cpp",
@@ -45,5 +49,5 @@
         "sstream": "cpp",
         "stdexcept": "cpp",
         "streambuf": "cpp"
-    }
+    },
 }

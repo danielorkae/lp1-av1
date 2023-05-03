@@ -1,6 +1,6 @@
 #include <fstream>
-#include "../../include/repositories/bus-repository.hpp"
-#include "../../include/core/files.hpp"
+#include "repositories/bus-repository.hpp"
+#include "core/files.hpp"
 
 using namespace std;
 

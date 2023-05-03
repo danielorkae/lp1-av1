@@ -2,7 +2,7 @@
 #define REPOSITORIES_BUS_REPOSITORY_HPP
 
 #include <vector>
-#include "../domain/bus.hpp"
+#include "domain/bus.hpp"
 
 using namespace std;
 

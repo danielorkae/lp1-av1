@@ -2,7 +2,7 @@
 #define REPOSITORIES_FEEDBACK_REPOSITORY_HPP
 
 #include <vector>
-#include "../domain/feedback.hpp"
+#include "domain/feedback.hpp"
 
 using namespace std;
 

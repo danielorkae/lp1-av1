@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../../include/core/io.hpp"
+#include "core/io.hpp"
 
 /// @brief Limpa a tela
 void clear_screen()
