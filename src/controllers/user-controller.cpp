@@ -1,21 +1,23 @@
 #include <iostream>
 #include "include/core/io.hpp"
 #include "include/core/permissions.hpp"
-#include "include/repositories/bus-repository.hpp"
 #include "include/presentation/bus-presentation.hpp"
+#include "include/repositories/bus-repository.hpp"
+#include "../../include/repositories/feedback-repository.hpp"
 
 using namespace std;
 
 void user_menu()
 {
-    cout << "1. Listar ônibus" << endl
-         << "2. Buscar ônibus por terminal" << endl
-         << "3. Ver intinerário de ônibus" << endl
-         << "4. Deixar um feedback" << endl
-         << "5. Voltar" << endl;
+    vector<string> options = {
+        "1. Listar ônibus",
+        "2. Buscar ônibus por terminal",
+        "3. Ver intinerário de ônibus",
+        "4. Deixar um feedback",
+        "5. Voltar",
+    };
 
-    int option;
-    cin >> option;
+    int option = prompt_menu(options, true, true);
 
     switch (option)
     {
@@ -32,9 +34,7 @@ void user_menu()
         leave_feedback();
         break;
     case 5:
-        break;
-    default:
-        cout << "Opção inválida" << endl;
+        return;
         break;
     }
 }
@@ -83,5 +83,19 @@ void show_bus_itinerary()
 
 void leave_feedback()
 {
-    cout << "Deixando um feedback" << endl;
+    vector<Feedback> feedbacks = get_feedbacks();
+    string content, date;
+
+    title("Deixar um feedback");
+
+    content = prompt_line("Digite o conteúdo do feedback: ");
+    date = prompt_line("Digite a data do feedback: ");
+
+    Feedback feedback;
+    feedback.content = content;
+    feedback.date = date;
+
+    feedbacks.push_back(feedback);
+
+    save_feedbacks(feedbacks);
 }
