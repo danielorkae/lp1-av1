@@ -1,5 +1,5 @@
 #include <iostream>
-#include "presentation/bus-presenter.hpp"
+#include "printers/bus-printer.hpp"
 
 void print_bus(Bus bus)
 {

@@ -1,5 +1,5 @@
-#ifndef PRESENTATION_BUS_PRESENTATION_HPP
-#define PRESENTATION_BUS_PRESENTATION_HPP
+#ifndef PRINTERS_BUS_PRINTER_HPP
+#define PRINTERS_BUS_PRINTER_HPP
 
 #include <vector>
 #include "domain/bus.hpp"

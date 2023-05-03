@@ -3,7 +3,7 @@
 #include "controllers/bus-controller.hpp"
 #include "core/io.hpp"
 #include "domain/bus.hpp"
-#include "presentation/bus-presenter.hpp"
+#include "printers/bus-printer.hpp"
 #include "repositories/bus-repository.hpp"
 
 using namespace std;
