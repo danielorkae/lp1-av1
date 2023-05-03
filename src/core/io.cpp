@@ -29,8 +29,6 @@ int prompt_menu(vector<string> options, bool clear_screen, bool show_exit_option
         system("clear || cls");
     }
 
-    title("Menu");
-
     for (unsigned int i = 0; i < options.size(); i++)
     {
         cout << i + 1 << ". " << options[i] << endl;

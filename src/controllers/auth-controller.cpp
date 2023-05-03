@@ -7,6 +7,7 @@
 /// @param user_role 
 void auth_menu(string &user_role)
 {
+    clear_screen();
     title("Menu de Autenticação");
 
     vector<string> options = {
@@ -14,7 +15,9 @@ void auth_menu(string &user_role)
         "Administrador",
     };
 
-    int option = prompt_menu(options, true, true);
+    alert("Escolha o tipo de usuário", false, false);
+
+    int option = prompt_menu(options, false, true);
 
     if (option == 1)
     {

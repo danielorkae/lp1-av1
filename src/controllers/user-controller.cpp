@@ -19,6 +19,8 @@ void user_menu()
         "Deixar um feedback",
     };
 
+    title("Menu do Usuário");
+
     int option = prompt_menu(options, true, true);
     clear_screen();
 
