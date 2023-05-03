@@ -1,4 +1,4 @@
-# Sistema Gerenciador de Linhas de Ônibus
+# LP1 - AV1 - Sistema Gerenciador de Linhas de Ônibus
 
 ## Detalhes
 Autor: Daniel Ferreira Lopes (github: [danielorkae](https://github.com/danielorkae))
