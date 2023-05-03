@@ -1,5 +1,5 @@
 #include <iostream>
-#include "presentation/bus-presentation.hpp"
+#include "presentation/bus-presenter.hpp"
 
 void print_bus(Bus bus)
 {
@@ -11,7 +11,7 @@ void print_bus(Bus bus)
 
 void print_buses(vector<Bus> buses)
 {
-    for (int i = 0; i < buses.size(); i++)
+    for (unsigned int i = 0; i < buses.size(); i++)
     {
         cout << "Ônibus " << i + 1 << endl;
         print_bus(buses[i]);

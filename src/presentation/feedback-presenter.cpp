@@ -1,5 +1,5 @@
 #include <iostream>
-#include "presentation/feedback-presentation.hpp"
+#include "presentation/feedback-presenter.hpp"
 
 void print_feedback(Feedback feedback)
 {
@@ -10,7 +10,7 @@ void print_feedback(Feedback feedback)
 
 void print_feedbacks(vector<Feedback> feedbacks)
 {
-    for (int i = 0; i < feedbacks.size(); i++)
+    for (unsigned int i = 0; i < feedbacks.size(); i++)
     {
         cout << "Feedback " << i + 1 << endl;
         print_feedback(feedbacks[i]);
